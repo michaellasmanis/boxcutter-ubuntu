@@ -2,8 +2,8 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-    config.vm.define "vagrant-ubuntu1410-desktop"
-    config.vm.box = "ubuntu1410-desktop"
+    config.vm.define "vagrant-ubuntu1804-desktop"
+    config.vm.box = "ubuntu1804-desktop"
 
     config.vm.provider :virtualbox do |v, override|
         v.gui = true
@@ -24,7 +24,6 @@ Vagrant.configure("2") do |config|
         v.vmx["memsize"] = "1024"
         v.vmx["numvcpus"] = "1"
         v.vmx["cpuid.coresPerSocket"] = "1"
-        v.vmx["ethernet0.virtualDev"] = "vmxnet3"
         v.vmx["RemoteDisplay.vnc.enabled"] = "false"
         v.vmx["RemoteDisplay.vnc.port"] = "5900"
         v.vmx["scsi0.virtualDev"] = "lsilogic"
