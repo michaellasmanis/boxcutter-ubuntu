@@ -1,0 +1,11 @@
+{
+  "_comment": "Build with `packer build -var-file=ubuntu2004-arm64.json ubuntu.json`",
+  "vm_name": "ubuntu2004-arm64",
+  "cpus": "1",
+  "cpu-type": "arm",
+  "disk_size": "65536",
+  "iso_checksum": "sha256:69460b49c6781a845ca561263af3850e107814ffb9c08a19555e819d49feef4c",
+  "iso_name": "ubuntu-20.04.2-live-server-arm64.iso",
+  "iso_url": "https://cdimage.ubuntu.com/releases/20.04.2/release/ubuntu-20.04.2-live-server-arm64.iso",
+  "memory": "1024"
+}
